@@ -1,0 +1,12 @@
+{
+  "name": "qa-has-power-cypress",
+  "version": "1.0.0",
+  "description": "E2E practicies",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "cypress": "latest",
+    "prettier": "latest"
+  }
+}

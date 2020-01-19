@@ -1,0 +1,6 @@
+{
+  "baseUrl": "http://qa-has-power.herokuapp.com/",
+  "waitForAnimations": true,
+  "viewportWidth": 1280,
+  "viewportHeight": 800
+}
