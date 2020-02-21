@@ -4,7 +4,7 @@
 
 1. Node.js installed
 2. Cypress
-
+   Go to project folder, and type in terminal
    ```bash
    $ npm install
 
@@ -12,14 +12,18 @@
 
 ## Usage:
 
-1. Run tests:
+1. Open Cypress:
 
    ```bash
    $ npx cypress open
+   ```
+   Or run tests
+
+   ```bash
    $ npx cypress run --headed --no-exit
    ```
 
-   Or alternatively use one of commands:
+   Or alternatively  (if  You don't have npx) use one of commands:
 
    ```bash
    $ (npm bin)/cypress open
