@@ -3,6 +3,6 @@ describe('Sign in with different methods', function() {
     cy.visit('/');
   })
   it('simple login', function() {
-    cy.log('*Ready to automate!*')
+    cy.log('**Ready to automate!**')
   })
 })
