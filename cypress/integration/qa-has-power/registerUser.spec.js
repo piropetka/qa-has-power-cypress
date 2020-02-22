@@ -1,0 +1,26 @@
+describe('User registration from tests', function () {
+    beforeEach('navigate to home page', function () {
+        cy.visit('/register')
+        cy.url().should('include', '.com/register')
+        cy.get('.se-pre-con:hidden').as('loader')
+        cy.get('@loader')
+        cy.contains("Food&Drink")
+    })
+    it('register using fixtures', function () {
+        cy.fixture('registerUser').then((registerUser) => {
+            cy.get('#name')
+                .type(registerUser.name)
+                .should('have.value', registerUser.name)
+            cy.get('#email')
+                .type(+ Date.now() + registerUser.email)
+            cy.get('#password')
+                .type(registerUser.password)
+                .should('have.value', registerUser.password)
+            cy.get('#confirm')
+                .type(registerUser.confirm + '{enter}')
+                .should('have.value', registerUser.confirm)
+        })
+        cy.get('@loader')
+        cy.contains('Użytkownik został zarejestrowany')
+    })
+})
